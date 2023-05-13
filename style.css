@@ -1,0 +1,264 @@
+/* Global styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  color: white;
+  background-color: black;
+  background-attachment: fixed;
+}
+
+/* Header styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  text-align: right;
+  background-color: rgba(255, 255, 255, 0.278);
+}
+
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+#navbar li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/*navigation bar text*/
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  text-align: right;
+  transition: font-size 0.2s;
+  /* Add a transition for a smooth effect */
+}
+
+/* Styling for the hovered navigation item */
+nav a:hover {
+  background-color: none;
+  color: #333;
+  font-size: 20px;
+  transform: translateY(-2px);
+  /* Move the hovered item up by 2 pixels */
+}
+
+/* Main styles */
+main {
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+}
+
+#welcome-section {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome-section h1{
+  font-size: 50px;
+}
+
+#welcome-section p{
+  font-size: 20px;
+}
+
+#about{
+  display: flex;
+  height: 80vh;
+  padding-top: 50px;
+}
+
+#aboutPhoto, #aboutInformation{
+  width:50%;
+  padding: 25px;
+}
+
+#aboutPhoto img{
+  height: 600px;
+  width: 350px;
+}
+
+#aboutInformation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#aboutInformation p{
+  text-align: justify;
+}
+
+#aboutInformationFooter{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#aboutInformationFooter p{
+  padding: 0px 10px 0px 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+#project-tile h2{
+  align-items: center;
+  padding-top: 100px;
+  position: relative;
+}
+
+#projectdiv{
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+#projectImg{
+  height: 400px;
+  width: 600px;
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projectImg img{
+  height: 300px;
+  width: 600px;
+}
+
+#projectImg, #projectInfo{
+  width: 50%;
+}
+
+#projectInfo{
+  padding: 25px;
+}
+
+#projectInfo p{
+  text-align: justify;
+}
+
+#links{
+  display: flex;
+}
+
+#otherProjects{
+  padding: 100px 200px;
+}
+
+#other{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+}
+
+#otherProjects img{
+  height: 150px;
+  width: 250px;
+}
+
+#skills{
+  padding: 100px 50px;
+}
+
+#skills ul{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  justify-items: center;
+}
+
+#skills ul li{
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 50px;
+}
+
+#education{
+  padding-top: 100px;
+}
+
+#edu{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+    "college twelve"
+    "college tenth";
+  align-items: center;
+}
+
+#college{
+  grid-area: college;
+  padding: 50px;
+  align-items: left;
+  border-right: 2px solid white;
+}
+
+#twelve{
+  grid-area: twelve;
+  padding: 70px 50px;
+
+  /* border-left: 2px solid white; */
+  border-bottom: 2px solid white;
+}
+
+#tenth{
+  grid-area: tenth;
+  padding: 70px 50px;
+}
+
+#marks{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#extracurricular ul{
+  text-align: left;
+}
+
+img{
+  border-radius: 10px;
+}
+
+#contact {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  #about{
+    height: 100vh;
+  }
+
+  #projectdiv{
+    flex-direction: column;
+  }
+}
